@@ -8,7 +8,7 @@ import UUID, { ZERO } from '@swarm/ron-uuid';
 import lww from './lww';
 import log from './log';
 import set from './set';
-import set from './parity';
+import parity from './parity';
 
 const rdt: { [string]: { type: UUID, reduce: Batch => Frame } } = {
   lww,
@@ -80,4 +80,4 @@ export function ron2js(rawFrame: string): { [string]: Atom } | null {
 export { default as lww } from './lww';
 export { default as log } from './log';
 export { default as set } from './set';
-export { default as set } from './parity';
+export { default as parity } from './parity';
